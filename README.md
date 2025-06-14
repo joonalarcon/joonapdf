@@ -1,32 +1,44 @@
-# joonapdf
+# 🐧 joonapdf
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue?logo=python&style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![Linux](https://img.shields.io/badge/platform-linux-orange?style=flat-square)
+![Status](https://img.shields.io/badge/status-beta-yellow?style=flat-square)
 
-## Descripción
+---
 
-`joonapdf` es una herramienta de línea de comandos en Python para convertir archivos `.docx` a PDF usando LibreOffice en modo headless. 
+## 🚀 Descripción
 
-Permite instalar y desinstalar LibreOffice automáticamente con indicadores visuales, y guarda los PDFs generados en una carpeta llamada `joonapdf` en el escritorio del usuario.
+**`joonapdf`** es una **herramienta CLI en Python** para convertir archivos **`.docx`** a **PDF** usando **LibreOffice** en modo *headless* (sin interfaz gráfica).
 
-## Características
+Con solo un comando puedes transformar uno o varios documentos Word en PDFs profesionales y ordenados, con instalación automática y silenciosa de LibreOffice, todo mientras ves un spinner de progreso y mensajes coloridos con íconos para una experiencia súper amigable.
 
-- Conversión de múltiples archivos `.docx` a PDF en una sola ejecución.
-- Instalación y desinstalación automática y silenciosa de LibreOffice con spinner de progreso.
-- Guarda los PDFs generados en una carpeta dedicada en el escritorio.
-- Mensajes de estado con colores e íconos para mejor experiencia de usuario.
+---
 
-## Requisitos
+## ✨ Características principales
 
-- Python 3.8 o superior
-- LibreOffice (la herramienta puede instalarlo automáticamente si no está presente)
-- Sistema operativo Linux (probado en Ubuntu y derivados)
+- 📝 Conversión masiva de archivos `.docx` a PDF en una sola ejecución.
+- ⚙️ Instalación y desinstalación automática de LibreOffice sin molestar.
+- 📁 Los PDFs generados se guardan automáticamente en una carpeta **`joonapdf`** dentro del escritorio del usuario.
+- 🎨 Mensajes con colores e íconos para una experiencia visual agradable y clara.
+- 🐧 Diseñado para funcionar en **Linux** (Ubuntu y derivados, probado).
 
-## Instalación
+---
 
-Clona el repositorio:
+## 🔧 Requisitos
+
+- Python 3.8 o superior 🐍
+- LibreOffice (si no está instalado, el script lo instala por ti) 🧙‍♂️
+- Sistema operativo Linux (Ubuntu y derivados recomendados) 🐧
+
+---
+
+## ⚡ Instalación rápida
 
 ```bash
 git clone https://github.com/tuusuario/joonapdf.git
 cd joonapdf
-
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt  # si agregas paquetes externos
+pip install .
